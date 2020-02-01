@@ -1,3 +1,5 @@
+#!/bin/bash
+
 IMAGE_NAME=gitproject:alpha
 CONTAINER_NAME=git-api
 
