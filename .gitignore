@@ -6,3 +6,7 @@
 
 **/*.log
 
+.gitignore
+
+**/*.iml
+
