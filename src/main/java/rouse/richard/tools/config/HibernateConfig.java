@@ -54,7 +54,7 @@ public class HibernateConfig implements InitializingBean {
        sessionFactoryBean.setDataSource(this.dataSource());
 
        // MUST TELL HIBERNATE WHERE TO LOCATE OUR ENTITIES!
-       sessionFactoryBean.setPackagesToScan("rouse.richard.tools.models");
+       sessionFactoryBean.setPackagesToScan("rouse.richard.tools.entities");
        sessionFactoryBean.setHibernateProperties(this.hibernateProperties());
        sessionFactoryBean.afterPropertiesSet();
        return sessionFactoryBean.getObject();

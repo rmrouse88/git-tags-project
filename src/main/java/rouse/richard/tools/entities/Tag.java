@@ -1,4 +1,4 @@
-package rouse.richard.tools.models;
+package rouse.richard.tools.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;

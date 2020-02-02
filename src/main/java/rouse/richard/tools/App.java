@@ -1,7 +1,9 @@
 package rouse.richard.tools;
 
 import lombok.extern.slf4j.Slf4j;
+import rouse.richard.tools.models.Hook;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,7 +21,7 @@ import rouse.richard.tools.config.HibernateConfig;
         HibernateJpaAutoConfiguration.class
 })
 @EnableTransactionManagement
-public class App {
+public class App implements InitializingBean {
 
     @Autowired
     private HibernateConfig hibernateConfig;
@@ -30,6 +32,14 @@ public class App {
     public static void main(String[] args){
 
         ApplicationContext ctx = SpringApplication.run(App.class);
+        log.debug("fuck");
+        log.info("info-fuck");
+
     }
 
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        Hook hook = new Hook();
+
+    }
 }

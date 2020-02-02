@@ -5,8 +5,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import rouse.richard.tools.models.Commit;
-import rouse.richard.tools.models.Tag;
+import rouse.richard.tools.entities.Commit;
+import rouse.richard.tools.entities.Tag;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
